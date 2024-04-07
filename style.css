@@ -1,0 +1,297 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add media queries to adjust the layout for different screen sizes */
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .parent-nav {
+        background-color: rgb(219, 134, 103, 0);
+        min-height: 2rem;
+    }
+
+    .nav {
+        display: flex;
+        background-color: black;
+        justify-content: end;
+        min-height: 2rem;
+    }
+
+    .nav.open {
+        /* display: flex; */
+        position: relative;
+        /* background-color: rgb(219, 134, 103); */
+        min-height: 2rem;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide the navigation links */
+    }
+    
+    .nav-links li {
+        background-color: black;
+        width: 10rem;
+        min-height: 3rem;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        /* Hide the navigation links */
+    }
+    
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+    
+        .nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 2px 3rem;
+            color: rgb(62, 175, 200);
+            font-weight: bold;
+            font-style: italic;
+            font-family: chiller;
+        }
+    
+        .nav ul li a:hover {
+            color: whitesmoke;
+            background-color: grey;
+        }
+    
+    .nav.open .nav-links li {
+        display: block;
+    }
+
+    .nav.open .nav-links {
+        margin-top: 2rem;
+        /* background-color: white; */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: rgb(219, 134, 103, 0);
+        width: 100%;
+    }
+
+    .nav.open .hamburger-menu {
+        background-color: black;
+        /* flex-direction: column; */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        /* Show the hamburger menu */
+        flex-direction: column;
+        float: right;
+    }
+
+    .bar {
+        background-color: white;
+        width: 25px;
+        height: 3px;
+        margin: 3px 0;
+    }
+
+    .row {
+        display: flex;
+        min-height: 80vh;
+    }
+
+    .column1 {
+        width: 20%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .column1 h2 {
+        background-color: #363636;
+        color: rgb(169, 199, 129);
+        font-family: chiller;
+        text-align: center;
+    }
+
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 60%;
+        background-color: black;
+        overflow: auto;
+        text-align: center;
+    }
+
+    .column2 h2 {
+        text-align: center;
+        color: #7fd2c6;
+    }
+
+    .column3 {
+        width: 20%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .column3 h2 {
+        background-color: #363636;
+        color: rgb(169, 199, 129);
+        font-family: chiller;
+        text-align: center;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        height: 3rem;
+    }
+
+    .head {
+        display: flex;
+        background-color: black;
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
+        font-family: chiller;
+        font-style: italic;
+        color: rgb(186, 255, 151);
+    }
+
+    .head img {
+
+        width: 6rem;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .head {
+        color: rgb(186, 255, 151);
+        display: flex;
+        background-color: rgb(61, 59, 59);
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
+        font-family: chiller;
+        font-style: italic;
+    }
+
+    .head img {
+
+        width: 6rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        min-height: 2rem;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        padding: 2px 22px;
+        text-decoration: none;
+        font-size: 18px;
+        color: rgb(62, 175, 200);
+        font-weight: bold;
+        font-style: italic;
+        font-family: chiller;
+    }
+
+    .nav ul li a:hover {
+        color: whitesmoke;
+        background-color: grey;
+    }
+
+    .row {
+        display: flex;
+        height: 80vh;
+    }
+
+    .column1 {
+        width: 20%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .column1 h2 {
+        background-color: #363636;
+        color: rgb(169, 199, 129);
+        font-family: chiller;
+        text-align: center;
+    }
+
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 60%;
+        background-color: black;
+        overflow: scroll;
+        text-align: center;
+    }
+
+    .column2 h2 {
+        text-align: center;
+        font-family: chiller;
+        color: #7fd2c6;
+    }
+
+    .column3 {
+        width: 20%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .column3 h2 {
+        background-color: #363636;
+        color: rgb(169, 199, 129);
+        font-family: chiller;
+        text-align: center;
+
+    }
+
+    /* .column3 img{
+    position: relative;
+    width: 20%;
+} */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        height: 3rem;
+    }
+
+    /* Styles for hamburger menu */
+    .hamburger-menu {
+        /* display: none; */
+        cursor: pointer;
+        padding: 10px;
+    }
+}

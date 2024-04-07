@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @media (max-width:600px) {
+
+        .column1,
+        .column2,
+        .column3 {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="head">
+        <img src="logo.png" alt="">
+        <h1>STARVIEW THEATER</h1>
+    </div>
+    <div class="parent-nav">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SHOWS</a></li>
+                <li><a href="#">TICKETS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="column1">
+            <h2>CURRENT MOVIES</h2>
+            <img src="c1.avif" alt="">
+            <img src="c2.avif" alt="">
+            <img src="c3.avif" alt="">
+            <img src="c4.avif" alt="">
+            <img src="c5.avif" alt="">
+            <img src="c6.avif" alt="">
+            <p>"Welcome to our canteen, where every bite is a taste of perfection. From savory classics to tempting treats, we've got your cravings covered. Join us for a culinary experience that's sure to delight your senses."</p>
+        </div>
+        <div class="column2">
+            <h2>INTRODUCTION</h2>
+                <p>Welcome to Starview Theater! 🎭
+
+                    Step into a realm where the magic of the stage meets the wonder of the cosmos, where every performance is a celestial spectacle that will transport you to new realms of imagination and emotion. At Starview Theater, we invite you to experience the enchantment of live entertainment like never before.
+                </p>
+            <img src="theater.jpg" alt="">
+            <p>As you enter our celestial auditorium, you'll be greeted by the grandeur of our stage, bathed in the soft glow of starlight. Take a moment to soak in the ambiance as you prepare to be whisked away on a journey of drama, comedy, music, and dance under the twinkling canopy of the cosmos.
+
+                🌌 Our lineup of performances is as diverse and captivating as the constellations themselves. From captivating plays and Broadway musicals to mesmerizing dance recitals and live concerts, there's something for every taste and inclination at Starview Theater. Prepare to be dazzled by the talent of our performers as they bring stories to life amidst a backdrop of celestial splendor.
+                
+                🌟 But the magic of Starview Theater extends beyond the stage. Immerse yourself in the immersive experience of our cutting-edge technology, with state-of-the-art sound and lighting systems that will elevate your theater-going experience to new heights. Feel the energy of the performance pulsating through your veins as you become part of the cosmic narrative unfolding before your eyes.
+                
+                ✨ And as the curtain falls, the enchantment continues in our celestial lounge, where you can mingle with fellow theater enthusiasts, sip on celestial cocktails, and discuss the highlights of the evening's performance under the glow of twinkling stars.
+                
+                🌌 At Starview Theater, every performance is a journey to the furthest reaches of the imagination, where dreams take flight and reality fades into the background. Whether you're a seasoned theater-goer or a newcomer to the world of live entertainment, our theater promises an experience that is truly out of this world.
+                
+                🌟 Join us at Starview Theater, where the stage is set for a cosmic adventure you'll never forget.</p>
+        </div>
+        <div class="column3">
+            <h2>UPCOMING MOVIES</h2>
+            <img src="up1.avif" alt="">
+            <img src="up2.jpg" alt="">
+            <img src="up3.jpeg" alt="">
+            <img src="up4.jpeg" alt="">
+            <img src="up5.avif" alt="">
+            <img src="up6.jpg" alt="">
+            <p>This is the third division.</p>
+        </div>
+    </div>
+    <footer>CopyRight &copy . All Rights Reserved</footer>
+    <script src="script.js"></script>
+</body>
+<script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('.nav');
+
+    hamburgerMenu.addEventListener('click', () => {
+        nav.classList.toggle('open');
+    });
+
+</script>
+
+</html>
